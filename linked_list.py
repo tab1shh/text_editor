@@ -1,7 +1,7 @@
 class Node:
     def __init__(self, data):
-        self.data = data
-        self.next = None
+        self.data = data # data is stored here
+        self.next = None # points to next node
 
 class LinkedList:
     def __init__(self):
@@ -24,14 +24,14 @@ class LinkedList:
             return None
         # checks if there is only one element in linked list
         # if head node doesnt have a next node, method stores 'head' node in 'temp', sets 'head' to 'None' (emptying list) and returns data of the deleted node
-        if not self.head.next:
-            temp = self.head
-            self.head = None
-            return temp.data
+        if not self.head.next: # if theres only one head, remove it and return its data
+            temp = self.head 
+            self.head = None 
+            return temp.data # return data from removed head
         # travseres the linked list to find the second to last node
         # sets 'last' to 'head' and iterates through the list until 'last.next.next' os 'None', so 'last' points to second to last node
-        last = self.head
-        while last.next.next:
+        last = self.head # start at first head
+        while last.next.next: # move to head before the last 
             last = last.next
         # deletes last node and returns data
         # stores the last node in 'temp', sets 'last.next' to 'None', removing the last node from the list and returns the data of the deleted node
