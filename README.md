@@ -9,7 +9,7 @@ A simple text editor implemented in Python using a linked list to store the text
   - [LinkedList](#linkedList)
   - [Stack](#stack)
   - [Main](#main)
-  
+
 ## Overview
 This projects aims to implement a text editor with the use of fundamental data structures such as linked lists and stacks. It allows basic text manipulation such as insertion, deletion, and undoing the last action
 
@@ -58,4 +58,3 @@ Choose an option: Q
 
 ### Main
 'main.py' contains the 'TextEditor' class and the main program loop. The 'TextEditor' class uses a 'LinkedList' to store the text and a 'Stack' to manage undo operations.
-
